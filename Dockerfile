@@ -1,5 +1,7 @@
 FROM directus/directus:latest
 
+USER root
+
 RUN apk update
 RUN apk add sendmail
 
