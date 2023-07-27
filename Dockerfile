@@ -1,10 +1,5 @@
 FROM directus/directus:latest
 
-USER root
-
-RUN apk update
-RUN apk add sendmail
-
 ENV HOST="0.0.0.0"
 ARG PUBLIC_URL
 ENV PUBLIC_URL=$PUBLIC_URL
