@@ -1,6 +1,6 @@
 FROM directus/directus:latest
 
-RUN apt-get update && apt-get install sendmail -y --no-install-recommends && apt-get clean && rm -rf /var/lib/apt/lists/*
+RUN apk update && apk add sendmail
 
 ENV HOST="0.0.0.0"
 ARG PUBLIC_URL
