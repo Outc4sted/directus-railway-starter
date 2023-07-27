@@ -1,6 +1,7 @@
 FROM directus/directus:latest
 
-RUN apk update && apk add sendmail
+RUN apk update
+RUN apk add sendmail
 
 ENV HOST="0.0.0.0"
 ARG PUBLIC_URL
